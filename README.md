@@ -13,6 +13,24 @@ The SOD dataset can be obtained from our GoogleDrive via the following [link](ht
 
 ## Stack Overflow Duplicity Dataset (SODD)
 
+The Stack Overflow Duplicity Dataset (SOD) is a dataset designated for training duplicity detection models. The duplicate question detection task is a very challanging since it requires the model to distinguis tiny semantic nuances. Trained models can then be deployed to Q&A websites such as the Stack Overflow or Quora, where it can improve the users' search experiente by automatically linking and detecting the duplicates.
+
+**Data Structure**
+
+The dataset is split into train/dev/test splits and is stored in _parquet_ files compressed using _gzip_. The data can be loaded using _pandas_ library using the following code snippet:
+
+```Python
+!pip3 install pandas pyarrow
+
+import pandas as pd
+
+train_df = pd.read_parquet('SODD_train.parquet.gzip')
+dev_df = pd.read_parquet('SODD_dev.parquet.gzip')
+test_df = pd.read_parquet('SODD_test.parquet.gzip')
+```
+
+**Download the dataset:**
+
 The SODD dataset can be obtained from our GoogleDrive via the following [link](https://drive.google.com/drive/folders/1JG6Fibvhs0Jz6JD83gwMqAmzUV9rsoX3?usp=sharing).
 
 ## Licence
