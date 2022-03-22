@@ -5,9 +5,15 @@ The datasets were presented in the paper [MQDD – Pre-training of Multimodal Qu
 which contains detailed information about the datasets.
 
 
-## Stack Overflow Dataset
+## Stack Overflow Dataset (SOD)
 
-## Stack Overflow Duplicity Dataset
+**Download the dataset:**
+
+The SOD dataset can be obtained from our GoogleDrive via the following [link](https://drive.google.com/drive/folders/16dyzRNrJLe9g0KVpsoaIJhW7-nmf6j1V?usp=sharing).
+
+## Stack Overflow Duplicity Dataset (SODD)
+
+The SODD dataset can be obtained from our GoogleDrive via the following [link](https://drive.google.com/drive/folders/1JG6Fibvhs0Jz6JD83gwMqAmzUV9rsoX3?usp=sharing).
 
 ## Licence
 This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. http://creativecommons.org/licenses/by-nc-sa/4.0/
