@@ -15,6 +15,10 @@ The SOD dataset can be obtained from our GoogleDrive via the following [link](ht
 
 The Stack Overflow Duplicity Dataset (SOD) is a dataset designated for training duplicity detection models. The duplicate question detection task is a very challanging since it requires the model to distinguis tiny semantic nuances. Trained models can then be deployed to Q&A websites such as the Stack Overflow or Quora, where it can improve the users' search experiente by automatically linking and detecting the duplicates.
 
+**Download the dataset:**
+
+The SODD dataset can be obtained from our GoogleDrive via the following [link](https://drive.google.com/drive/folders/1JG6Fibvhs0Jz6JD83gwMqAmzUV9rsoX3?usp=sharing).
+
 **Data Structure**
 
 The dataset is split into train/dev/test splits and is stored in _parquet_ files compressed using _gzip_. The data can be loaded using _pandas_ library using the following code snippet:
@@ -29,9 +33,14 @@ dev_df = pd.read_parquet('SODD_dev.parquet.gzip')
 test_df = pd.read_parquet('SODD_test.parquet.gzip')
 ```
 
-**Download the dataset:**
+**Dataset Size:**
 
-The SODD dataset can be obtained from our GoogleDrive via the following [link](https://drive.google.com/drive/folders/1JG6Fibvhs0Jz6JD83gwMqAmzUV9rsoX3?usp=sharing).
+| **Type**       | **Train** | **Dev**  | **Test** | **Total** |
+|------------|-------|------|------|-------|
+| Different  | 550K  | 64K  | 32K  | 646K  |
+| Similar    | 526K  | 62K  | 30K  | 618K  |
+| Duplicates | 191K  | 22K  | 11K  | 224K  |
+| Total      | 1.2M  | 148K | 73K  | 1.4M  |
 
 ## Licence
 This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. http://creativecommons.org/licenses/by-nc-sa/4.0/
