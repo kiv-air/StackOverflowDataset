@@ -38,6 +38,41 @@ Since the resulting dataset takes up a lot of disk space, we split the individua
 
 **Dataset Statistics:**
 
+The following table provides a detailed statistics of the released Stack Overflow Dataset (SOD). The table shows the average number of characters, tokens, and words in different source codes present in questions (QC) or answers (AC) and texts present in questions (QT) or answers (AT). Besides the average statistics, the table provides a total count of tokens, words, or characters. To calculate the statistics related to token counts, we utilized our wordpiece tokenizer, whereas we employed a simple space tokenization for the word statistics. 
+
+The resulting number of training examples highle depends on how are the data utilize. In our work, we have extracted `218.5M` NL-PL pairs that we used for the pre-training.
+
+| **Statistic**                             | **QC**    | **QT**    | **AC**   | **AT**   | **Total**         |
+|---------------------------------------|-------|-------|------|------|---------------------------|
+| average \# of characters              | 846   | 519   | 396  | 369  | -                         |
+| average \# of tokens                  | 298   | 130   | 140  | 92   | -                         |
+| average \# of words                   | 83    | 89    | 44   | 60   | -                         |
+| \# of characters                      | 16.1B | 13.5B | 6.6B | 9.6B | 45.8B                     |
+| \# of tokens                          | 5.7B  | 3.4B  | 2.3B | 2.4B | 13.8B                     |
+| \# of words                           | 1.6B  | 2.3B  | 0.7B | 1.6B |  6.2B                     |
+
+Furthermore, the table below presents a tag-based analysis of the percentage of individual programming languages in the SOD dataset. The table shows the 15 most frequent programming languages included in the dataset. Together they form approximately 70% of all the examples. The remaining 30% are then made up of less popular programming languages or specific technologies.
+
+| **Order** | **Tag**         | **Percentage** |
+|-------|-------------|------------|
+| 1     | javascript  | 10,95      |
+| 2     | java        | 9,88       |
+| 3     | c#          | 8,04       |
+| 4     | php         | 7,95       |
+| 5     | python      | 6,32       |
+| 6     | html        | 6,18       |
+| 7     | css         | 4,28       |
+| 8     | c++         | 4,15       |
+| 9     | sql         | 3,42       |
+| 10    | c           | 2,29       |
+| 11    | objective-c | 1,93       |
+| 12    | r           | 1,36       |
+| 13    | ruby        | 1,32       |
+| 14    | swift       | 1,05       |
+| 15    | bash        | 0,8        |
+| -     | total       | 69,92      |
+
+
 ## Stack Overflow Duplicity Dataset (SODD)
 
 The Stack Overflow Duplicity Dataset (SOD) is a dataset designated for training duplicity detection models. The duplicate question detection task is a very challanging since it requires the model to distinguis tiny semantic nuances. Trained models can then be deployed to Q&A websites such as the Stack Overflow or Quora, where it can improve the users' search experiente by automatically linking and detecting the duplicates. The resulting dataset is based on a StackOverflow data dump acquired from [archive.org](https://archive.org/download/stackexchange) in June 2020.
