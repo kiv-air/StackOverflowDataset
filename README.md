@@ -1,13 +1,13 @@
 # Stack Overflow (Duplicity) Dataset
 
 This repository publishes two novel datasets for (pre-)training NLP models applicable for software engineering domain.
-The datasets were presented in the paper [MQDD – Pre-training of Multimodal Question Duplicity Detection for Software Engineering Domain](https://arxiv.org/abs/xxx),
+The datasets were presented in the paper [MQDD – Pre-training of Multimodal Question Duplicity Detection for Software Engineering Domain](https://arxiv.org/abs/2203.14093),
 which contains detailed information about the datasets.
 
 
 ## Stack Overflow Dataset (SOD)
 
-The Stack Overflow Dataset (SOD) represents a large corpus of natural language-programming language (NL-PR) pairs. The dataset can be leveraged to pre-train multimodal encoders targetting software engineering domain. The dataset's structure (described below) is specifically tailor for our novel pre-training objectives (see our paper) designed for improving duplicate question detection. However, the dataset can be simply transformed into a general parallel corpus can be used in many different ways. The resulting dataset is based on a StackOverflow data dump acquired from [archive.org](https://archive.org/download/stackexchange) in June 2020. For more information see our [paper](https://arxiv.org/abs/xxx)
+The Stack Overflow Dataset (SOD) represents a large corpus of natural language-programming language (NL-PR) pairs. The dataset can be leveraged to pre-train multimodal encoders targetting software engineering domain. The dataset's structure (described below) is specifically tailor for our novel pre-training objectives (see our paper) designed for improving duplicate question detection. However, the dataset can be simply transformed into a general parallel corpus can be used in many different ways. The resulting dataset is based on a StackOverflow data dump acquired from [archive.org](https://archive.org/download/stackexchange) in June 2020. For more information see our [paper](https://arxiv.org/abs/2203.14093)
 
 **Download the dataset:**
 
@@ -129,7 +129,7 @@ In case of any questions do not hesitate to contact us using email `pasekj{at}nt
 This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. http://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ## How should I cite the MQDD? 
-For now, please cite [the Arxiv paper](https://arxiv.org/abs/xxx):
+For now, please cite [the Arxiv paper](https://arxiv.org/abs/2203.14093):
 ```
 @misc{https://doi.org/10.48550/arxiv.2203.14093,
   doi = {10.48550/ARXIV.2203.14093},
