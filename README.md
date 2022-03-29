@@ -131,13 +131,13 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 ## How should I cite the MQDD? 
 For now, please cite [the Arxiv paper](https://arxiv.org/abs/xxx):
 ```
-@article{pasekj2022mqdd,
-      title={MQDD -- Pre-training of Multimodal Question Duplicity Detection for Software Engineering Domain}, 
-      author={Jan Pašek and Jakub Sido and Miloslav Konopík and Ondřej Pražák},
-      year={2022},
-      eprint={TODO},
-      archivePrefix={TODO},
-      primaryClass={TODO},
-      journal={TODO},
+@misc{https://doi.org/10.48550/arxiv.2203.14093,
+  doi = {10.48550/ARXIV.2203.14093},
+  url = {https://arxiv.org/abs/2203.14093},
+  author = {Pašek, Jan and Sido, Jakub and Konopík, Miloslav and Pražák, Ondřej},
+  title = {MQDD -- Pre-training of Multimodal Question Duplicity Detection for Software Engineering Domain},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution Non Commercial Share Alike 4.0 International}
 }
 ```
